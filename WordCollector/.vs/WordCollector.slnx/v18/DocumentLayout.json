@@ -1,0 +1,196 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{866713D3-D821-4D63-A4D9-D59281CB8F88}|WordCollector.Client\\WordCollector.Client.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{866713D3-D821-4D63-A4D9-D59281CB8F88}|WordCollector.Client\\WordCollector.Client.csproj|solutionrelative:wordcollector.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.api\\wordcollector.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|solutionrelative:wordcollector.api\\wordcollector.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866713D3-D821-4D63-A4D9-D59281CB8F88}|WordCollector.Client\\WordCollector.Client.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{866713D3-D821-4D63-A4D9-D59281CB8F88}|WordCollector.Client\\WordCollector.Client.csproj|solutionrelative:wordcollector.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.api\\wordcollector.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|solutionrelative:wordcollector.api\\wordcollector.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|solutionrelative:wordcollector.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|solutionrelative:wordcollector.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.api\\controllers\\wordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|solutionrelative:wordcollector.api\\controllers\\wordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23F3432-594C-9E3D-9E63-6245E8306460}|WordCollector.Api\\WordCollector.Api.csproj|solutionrelative:wordcollector.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92D26B5-827E-52A8-F3A5-FBA75B723B08}|WordCollector.Shared\\WordCollector.Shared.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.shared\\wordentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C92D26B5-827E-52A8-F3A5-FBA75B723B08}|WordCollector.Shared\\WordCollector.Shared.csproj|solutionrelative:wordcollector.shared\\wordentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92D26B5-827E-52A8-F3A5-FBA75B723B08}|WordCollector.Shared\\WordCollector.Shared.csproj|c:\\users\\admin\\source\\repos\\runninghill-wordcollector\\wordcollector\\wordcollector.shared\\wordtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C92D26B5-827E-52A8-F3A5-FBA75B723B08}|WordCollector.Shared\\WordCollector.Shared.csproj|solutionrelative:wordcollector.shared\\wordtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Client\\Program.cs",
+              "RelativeDocumentMoniker": "WordCollector.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Client\\Program.cs",
+              "RelativeToolTip": "WordCollector.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T10:52:04.135Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\Program.cs",
+              "RelativeDocumentMoniker": "WordCollector.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\Program.cs",
+              "RelativeToolTip": "WordCollector.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T10:30:21.356Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WordCollector.Api",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\WordCollector.Api.csproj",
+              "RelativeDocumentMoniker": "WordCollector.Api\\WordCollector.Api.csproj",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\WordCollector.Api.csproj",
+              "RelativeToolTip": "WordCollector.Api\\WordCollector.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-24T10:07:32.784Z",
+              "EditorCaption": "",
+              "OwnerCaption": "WordCollector.Api"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Client\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "WordCollector.Client\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Client\\Pages\\Home.razor",
+              "RelativeToolTip": "WordCollector.Client\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-24T10:54:59.073Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "WordCollector.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\appsettings.json",
+              "RelativeToolTip": "WordCollector.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-24T10:54:19.244Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WordCollector.Api.http",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\WordCollector.Api.http",
+              "RelativeDocumentMoniker": "WordCollector.Api\\WordCollector.Api.http",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\WordCollector.Api.http",
+              "RelativeToolTip": "WordCollector.Api\\WordCollector.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-11-24T10:30:15.922Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WordsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\Controllers\\WordsController.cs",
+              "RelativeDocumentMoniker": "WordCollector.Api\\Controllers\\WordsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\Controllers\\WordsController.cs",
+              "RelativeToolTip": "WordCollector.Api\\Controllers\\WordsController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvykAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T10:20:20.791Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WordCollector.Api\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Api\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "WordCollector.Api\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T10:12:20.781Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WordEntry.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Shared\\WordEntry.cs",
+              "RelativeDocumentMoniker": "WordCollector.Shared\\WordEntry.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Shared\\WordEntry.cs",
+              "RelativeToolTip": "WordCollector.Shared\\WordEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T10:03:05.959Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WordType.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Shared\\WordType.cs",
+              "RelativeDocumentMoniker": "WordCollector.Shared\\WordType.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Shared\\WordType.cs",
+              "RelativeToolTip": "WordCollector.Shared\\WordType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T09:43:22.938Z",
+              "OwnerCaption": "%2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

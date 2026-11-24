@@ -1,0 +1,45 @@
+using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
+using WordCollector.Api.Data;
+
+var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddControllers()
+        .AddJsonOptions(options =>
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=words.db"));
+
+
+// Allow Blazor Client origin
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("BlazorPolicy", policy =>
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+}
+
+// Auto-create SQLite DB on startup 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.EnsureCreated();
+}
+
+
+//app.UseHttpsRedirection();
+
+//app.UseAuthorization();
+
+app.UseCors("BlazorPolicy");
+app.MapControllers();
+app.Run();

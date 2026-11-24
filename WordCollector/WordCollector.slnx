@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="WordCollector.Api/WordCollector.Api.csproj" />
+  <Project Path="WordCollector.Client/WordCollector.Client.csproj" Id="866713d3-d821-4d63-a4d9-d59281cb8f88" />
+  <Project Path="WordCollector.Shared/WordCollector.Shared.csproj" />
+</Solution>
