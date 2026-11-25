@@ -17,7 +17,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("BlazorPolicy", policy =>
-        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+         policy.WithOrigins("https://localhost:7112")
+              .AllowAnyHeader()
+              .AllowAnyMethod());
 });
 
 var app = builder.Build();

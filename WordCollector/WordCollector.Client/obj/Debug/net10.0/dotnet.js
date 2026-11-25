@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "WordCollector.Client",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-H5rrL/kQC67mOxF4wfnNCivMiLmaGhdp4XBkKiLUy2w=",
+    "hash": "sha256-9tgktl/cdDTujwQ/kczcprInBheuQ6ty+bY0K/223fI=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.6ilbvndvcf.js"
@@ -74,6 +74,12 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
         "virtualPath": "Microsoft.AspNetCore.Components.Forms.wasm",
         "name": "Microsoft.AspNetCore.Components.Forms.nkx2ay76zo.wasm",
         "hash": "sha256-iecxyM8OdBfSkIyClsimvoEA1YlBkA9kBdYeiX/U754=",
+        "cache": "force-cache"
+      },
+      {
+        "virtualPath": "Microsoft.AspNetCore.Components.QuickGrid.wasm",
+        "name": "Microsoft.AspNetCore.Components.QuickGrid.tzwuq11d84.wasm",
+        "hash": "sha256-d6+U8hCaRQPG3jcXWrvPb7h5mWc08giQBSh8l2bMtJ4=",
         "cache": "force-cache"
       },
       {
@@ -1236,8 +1242,8 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "WordCollector.Shared.wasm",
-        "name": "WordCollector.Shared.dopa0g4oqx.wasm",
-        "hash": "sha256-fSASJwJUv78zRh5w0wtsZwejgCOg/dJk0ApZ6l267MU=",
+        "name": "WordCollector.Shared.swxp52ska8.wasm",
+        "hash": "sha256-7KSkDfrfndgkzwvgHapvCuL8+PTizCezlvoFJ1uM2bE=",
         "cache": "force-cache"
       },
       {
@@ -1248,22 +1254,22 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "WordCollector.Client.wasm",
-        "name": "WordCollector.Client.fd75vu0geo.wasm",
-        "hash": "sha256-k2vfkHA07btpXWxIUr8wKsgH+KbZ314WHEVXY+Fltgw=",
+        "name": "WordCollector.Client.s65900641e.wasm",
+        "hash": "sha256-fB2Nzp0xn3aR2MnifadmKK3J3deZGuaOxnjrPo3azIE=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "WordCollector.Shared.pdb",
-        "name": "WordCollector.Shared.368nqouw1o.pdb",
-        "hash": "sha256-GyP3ocRJtOgTPudqeD2gN+yVPn0Pm0ljcBN1xlC+BLc=",
+        "name": "WordCollector.Shared.rrhkxk6sc2.pdb",
+        "hash": "sha256-CXgBEmXgBi/2YtgaGvE+q9Dyi2Uv2/0BUI3Dsfztj3U=",
         "cache": "force-cache"
       },
       {
         "virtualPath": "WordCollector.Client.pdb",
-        "name": "WordCollector.Client.v11ci2x63x.pdb",
-        "hash": "sha256-rUWHVULqTr3kNmGypAiUV4K3++21l6oX6WH98MHqdnM=",
+        "name": "WordCollector.Client.ddqbsemza8.pdb",
+        "hash": "sha256-v/G8UK+hHNPARW0dp61OuPHHEk5Y/Yl9EdCPR+hHYSA=",
         "cache": "force-cache"
       }
     ],
