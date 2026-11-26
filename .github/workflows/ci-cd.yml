@@ -1,0 +1,26 @@
+name: Test and Deploy to Render
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-node@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build and Run Tests
+        run: dotnet test --configuration Release
+
+      - name: Trigger Render Docker Deployment
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
