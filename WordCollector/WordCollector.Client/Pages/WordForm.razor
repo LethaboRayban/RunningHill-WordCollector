@@ -1,0 +1,23 @@
+﻿@using WordCollector.Shared
+@implements IModalForm
+
+<EditForm Model="@WordEntry" class="card p-3 mb-4">
+    <DataAnnotationsValidator />
+
+    <div class="row">
+        <div class="col-md-6">
+            <label class="form-label">New Word</label>
+            <InputText @bind-Value="WordEntry.Word" class="form-control" placeholder="Enter word..." />
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Type</label>
+            <InputSelect @bind-Value="WordEntry.Type" class="form-select">
+                @foreach (var type in Enum.GetValues<WordType>())
+                {
+                    <option value="@type">@type</option>
+                }
+            </InputSelect>
+        </div>
+    </div>
+
+</EditForm>

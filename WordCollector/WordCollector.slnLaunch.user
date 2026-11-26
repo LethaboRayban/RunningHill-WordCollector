@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "WordCollector.Api\\WordCollector.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WordCollector.Client\\WordCollector.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

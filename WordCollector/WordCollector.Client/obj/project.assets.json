@@ -71,6 +71,28 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Components.QuickGrid/10.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "10.0.15"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Components.Web/10.0.15": {
         "type": "package",
         "dependencies": {
@@ -606,6 +628,28 @@
           "lib/net10.0/Microsoft.AspNetCore.Components.Forms.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Microsoft.AspNetCore.Components.QuickGrid/10.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "10.0.15"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.Components.QuickGrid.props": {}
         }
       },
       "Microsoft.AspNetCore.Components.Web/10.0.15": {
@@ -1163,6 +1207,29 @@
         "lib/net10.0/Microsoft.AspNetCore.Components.Forms.xml",
         "microsoft.aspnetcore.components.forms.10.0.15.nupkg.sha512",
         "microsoft.aspnetcore.components.forms.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.QuickGrid/10.0.15": {
+      "sha512": "r9OnfQgRr7FM8n9LJXtTBPYWzjoSeiSqqzFlWcp/Ai25rStt4tro8cNhmaDXBMSdap2w8RJsvO4/Yzu9GobbJg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.quickgrid/10.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "buildTransitive/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.dll",
+        "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.xml",
+        "microsoft.aspnetcore.components.quickgrid.10.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.components.quickgrid.nuspec",
+        "staticwebassets/Microsoft.AspNetCore.Components.QuickGrid.boiwgh0w5b.bundle.scp.css",
+        "staticwebassets/QuickGrid.razor.js"
       ]
     },
     "Microsoft.AspNetCore.Components.Web/10.0.15": {
@@ -2104,6 +2171,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.AspNetCore.App.Internal.Assets >= 10.0.15",
+      "Microsoft.AspNetCore.Components.QuickGrid >= 10.0.15",
       "Microsoft.AspNetCore.Components.WebAssembly >= 10.0.15",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 10.0.15",
       "Microsoft.NET.ILLink.Tasks >= 10.0.15",
@@ -2172,6 +2240,10 @@
             "target": "Package",
             "version": "[10.0.15, )",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.Components.QuickGrid": {
+            "target": "Package",
+            "version": "[10.0.15, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",

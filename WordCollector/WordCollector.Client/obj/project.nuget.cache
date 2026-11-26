@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3sJcgeEfF9k=",
+  "dgSpecHash": "sYMoGmQIXl0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Client\\WordCollector.Client.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components\\10.0.15\\microsoft.aspnetcore.components.10.0.15.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\10.0.15\\microsoft.aspnetcore.components.analyzers.10.0.15.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\10.0.15\\microsoft.aspnetcore.components.forms.10.0.15.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\10.0.15\\microsoft.aspnetcore.components.quickgrid.10.0.15.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.web\\10.0.15\\microsoft.aspnetcore.components.web.10.0.15.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\10.0.15\\microsoft.aspnetcore.components.webassembly.10.0.15.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\10.0.15\\microsoft.aspnetcore.components.webassembly.devserver.10.0.15.nupkg.sha512",
