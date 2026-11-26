@@ -38,10 +38,9 @@ using (var scope = app.Services.CreateScope())
 }
 
 
-//app.UseHttpsRedirection();
-
-//app.UseAuthorization();
-
+app.UseBlazorFrameworkFiles();
+app.UseStaticFiles();
 app.UseCors("BlazorPolicy");
 app.MapControllers();
+app.MapFallbackToFile("Home.html");
 app.Run();
