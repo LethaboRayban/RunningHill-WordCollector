@@ -1,13 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
+    "\\.github\\workflows",
     "\\WordCollector",
-    "\\WordCollector\\WordCollector.Api",
-    "\\WordCollector\\WordCollector.Api\\Data",
-    "\\WordCollector\\WordCollector.Client",
     "\\WordCollector\\WordCollector.Client\\Pages",
     "\\WordCollector\\WordCollector.Client\\Pages\\Shared"
   ],
-  "SelectedNode": "\\WordCollector\\WordCollector.Client\\Pages\\Shared\\Modal.razor.cs",
+  "SelectedNode": "\\.github\\workflows\\ci-cd.yml",
   "PreviewInSolutionExplorer": false
 }
