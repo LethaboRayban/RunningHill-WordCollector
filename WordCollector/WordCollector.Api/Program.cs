@@ -30,11 +30,10 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-// Auto-create SQLite DB on startup 
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.EnsureCreated();
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    DbInitializer.Seed(dbContext);
 }
 
 

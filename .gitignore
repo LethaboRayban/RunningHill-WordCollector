@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+WordCollector/.vs/
+WordCollector.Api/bin/
+.vs/

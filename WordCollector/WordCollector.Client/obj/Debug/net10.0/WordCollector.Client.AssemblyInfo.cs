@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WordCollector.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4f0ec14ca99d669d407f04e4440d94136a379c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d86fe83a2e0f2223fc916a9a2dec7559963031a")]
 [assembly: System.Reflection.AssemblyProductAttribute("WordCollector.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WordCollector.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
