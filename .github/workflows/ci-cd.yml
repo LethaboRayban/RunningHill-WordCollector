@@ -7,20 +7,24 @@ on:
 jobs:
   test-and-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./WordCollector
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup .NET
-        uses: actions/setup-node@v4
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore WordCollector.slnx
 
       - name: Build and Run Tests
-        run: dotnet test --configuration Release
+        run: dotnet test WordCollector.slnx --configuration Release
 
       - name: Trigger Render Docker Deployment
         run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
