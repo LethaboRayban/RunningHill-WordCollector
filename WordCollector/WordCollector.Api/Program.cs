@@ -41,6 +41,7 @@ app.UseBlazorFrameworkFiles();
 
 app.UseStaticFiles();
 app.UseCors("BlazorPolicy");
+app.MapStaticAssets();
 app.MapControllers();
 app.MapFallbackToFile("index.html");
 app.Run();
