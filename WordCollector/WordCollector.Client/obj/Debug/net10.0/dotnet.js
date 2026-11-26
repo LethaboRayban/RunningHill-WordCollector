@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "WordCollector.Client",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-ObSfofWUWQivTqfjEwyuOdNsrHZ185oNjY7EmKgCEEs=",
+    "hash": "sha256-F4z0dqppNOudPc83bmXBI//Neztfq+7FpCPL8d0eB8U=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.6ilbvndvcf.js"
@@ -1242,8 +1242,8 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "WordCollector.Shared.wasm",
-        "name": "WordCollector.Shared.7cbqa6vydl.wasm",
-        "hash": "sha256-502L76+G5AFY4CUd3MlQVuu28gbxsZfb45WMptLW8OI=",
+        "name": "WordCollector.Shared.pewhknl4lu.wasm",
+        "hash": "sha256-UV6U8RWDWlNa3c4wO991xhe8Sc279y36PtriVs8MK7Y=",
         "cache": "force-cache"
       },
       {
@@ -1254,22 +1254,22 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "WordCollector.Client.wasm",
-        "name": "WordCollector.Client.p2f61ziri3.wasm",
-        "hash": "sha256-L4Gf2zt3UDSZrgrJO11iJfvyzUJZT7twaFbQ2L1fOYE=",
+        "name": "WordCollector.Client.v2okzixamo.wasm",
+        "hash": "sha256-GS5bgNaa5WP3i5M5V/yALXrItsHxCZpulBA+wJBLu9U=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "WordCollector.Shared.pdb",
-        "name": "WordCollector.Shared.vfdku8bdxr.pdb",
-        "hash": "sha256-9ZCPNzPkWQ60qTKZJUtjJJCGRJkGpikFW74URhQiFBM=",
+        "name": "WordCollector.Shared.u7xwutm8sk.pdb",
+        "hash": "sha256-1r0ZP1k2/kfycB6ZHJWhGDus0I936YjTqqwWKrIsPYI=",
         "cache": "force-cache"
       },
       {
         "virtualPath": "WordCollector.Client.pdb",
-        "name": "WordCollector.Client.ejxfo66mto.pdb",
-        "hash": "sha256-dthcTCmyyoajYi1qoDYlUM+6fHkvtkoHbiPiDs7aWFo=",
+        "name": "WordCollector.Client.brtur0f1mn.pdb",
+        "hash": "sha256-2eIzMPQkJ63e1iBVfzl72p6NCf/MyCvIdtGkc15aelA=",
         "cache": "force-cache"
       }
     ],

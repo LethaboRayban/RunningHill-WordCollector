@@ -39,7 +39,25 @@ public class WordsController : ControllerBase
         return CreatedAtAction(nameof(GetWords), new { id = item.Id }, item);
     }
 
-   
+
+    [HttpPut]
+    public async Task<ActionResult<WordEntry>> EditWord(WordEntry item)
+    {
+        var wordToEdit = await _context.Words.FindAsync(item.Id);
+
+        if (wordToEdit is null)
+            return NotFound();
+
+        wordToEdit.Word = item.Word.Trim();
+        wordToEdit.Type = item.Type;
+
+        _context.Words.Update(item);
+        await _context.SaveChangesAsync();
+
+        return Ok(wordToEdit);
+    }
+
+
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> DeleteWord(int id)
     {
