@@ -8,7 +8,7 @@ public static class DbInitializer
     public static void Seed(AppDbContext context)
     {
 
-        context.Database.Migrate();
+        context.Database.EnsureCreated();
 
         if (context.Words.Any())
         {
