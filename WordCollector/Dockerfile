@@ -4,7 +4,8 @@ WORKDIR /src
 #Copy solution files and restore
 COPY ["WordCollector.slnx", "./"]
 COPY ["WordCollector.Api/WordCollector.Api.csproj", "WordCollector.Api/"]
-COPY ["WordCollector.Client/WordCollector.Client.csproj", "./"]
+COPY ["WordCollector.Client/WordCollector.Client.csproj", "WordCollector.Client/"]
+COPY ["WordCollector.Shared/WordCollector.Shared.csproj", "WordCollector.Shared/"]
 RUN dotnet restore "WordCollector.slnx"
 
 #Copy the rest of the code and publish
