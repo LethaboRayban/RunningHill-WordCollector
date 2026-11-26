@@ -8,29 +8,22 @@ public partial class Modal
     [Parameter] public bool IsVisible { get; set; }
     [Parameter] public string Title { get; set; } = "Modal Title";
     [Parameter] public string ConfirmButtonName { get; set; } = "Confirm";
-    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public Type? FormComponentType { get; set; }
+    [Parameter] public Dictionary<string, object>? FormParameters { get; set; }
     [Parameter] public EventCallback<bool> OnClose { get; set; }
-    [Parameter] public EventCallback OnConfirmed { get; set; }
 
-    private IModalForm? _activeForm;
+    private DynamicComponent? _ref;
 
-    //child form registration 
-    public void RegisterForm(IModalForm form) => _activeForm = form;
-    public void Show() => IsVisible = true;
-    public void Close() => IsVisible = false;
-
-    private void Cancel() => Close();
-
-    private async Task ConfirmAsync()
+    private async Task SaveAsync()
     {
-        //form validation (modal will close once confirmed
-        if (_activeForm is not null)
+        if (_ref?.Instance is IModalForm formModal)
         {
-            bool isValid = await _activeForm.SubmitAsync();
-            if (!isValid) return;
+            if (await formModal.SubmitAsync())
+            {
+                await Close();
+            }
         }
-
-        await OnConfirmed.InvokeAsync();
-        Close();
     }
+
+    private Task Close() => OnClose.InvokeAsync();
 }

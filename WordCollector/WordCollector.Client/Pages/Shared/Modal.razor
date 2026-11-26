@@ -1,4 +1,4 @@
-﻿@if (IsVisible)
+﻿@if (IsVisible && FormComponentType is not null)
 {
     <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
         <div class="modal-dialog">
@@ -8,11 +8,13 @@
                     <button type="button" class="btn-close" @onclick="Close"></button>
                 </div>
                 <div class="modal-body">
-                    @ChildContent
+                    <DynamicComponent @ref="_ref"
+                                      Type="FormComponentType"
+                                      Parameters="FormParameters" />
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" @onclick="Close">Cancel</button>
-                    <button type="button" class="btn btn-primary" @onclick="ConfirmAsync">@ConfirmButtonName</button>
+                    <button type="button" class="btn btn-primary" @onclick="SaveAsync">@ConfirmButtonName</button>
                 </div>
             </div>
         </div>

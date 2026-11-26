@@ -2,27 +2,25 @@
 @using Microsoft.AspNetCore.Components.QuickGrid
 @using WordCollector.Client.Pages.Shared
 
-<button class="btn btn-primary" @onclick="() => _modal.Show()">Add Word</button>
+<button class="btn btn-primary" @onclick="() => OpenWordEntryModal(null)">Add Word</button>
 
-<Modal @ref="_modal" Title="Create New User">
-    <AddWord OnValidSave="HandleUserSaved" />
-</Modal>
+<Modal IsVisible="isModalVisible"
+       Title="@modalTitle"
+       FormComponentType="typeof(WordForm)"
+       FormParameters="formParameters"
+       OnClose="() => isModalVisible = false" />
 
 
-@if (words is null)
+if (!words.Any())
 {
     <p>Loading...</p>
-}
-else if (!words.Any())
-{
-    <p class="text-muted">No words found for this filter.</p>
 }
 else
 {
     <div class="table-responsive shadow-sm rounded border">
         <QuickGrid Items="@words.AsQueryable()" Class="table table-hover table-striped align-middle mb-0">
             <TemplateColumn Title="Actions">
-                <button>Edit</button>
+                <button @onclick="() => OpenWordEntryModal(context)">Edit</button>
             </TemplateColumn>
             <PropertyColumn Property="@(x => x.Id)" Sortable="true" />
             <PropertyColumn Property="@(x => x.Word)" Sortable="true" />

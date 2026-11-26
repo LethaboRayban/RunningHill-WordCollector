@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WordCollector"
+    "\\WordCollector",
+    "\\WordCollector\\WordCollector.Api",
+    "\\WordCollector\\WordCollector.Api\\Data",
+    "\\WordCollector\\WordCollector.Client",
+    "\\WordCollector\\WordCollector.Client\\Pages",
+    "\\WordCollector\\WordCollector.Client\\Pages\\Shared"
   ],
-  "SelectedNode": "\\WordCollector\\WordCollector.slnx",
+  "SelectedNode": "\\WordCollector\\WordCollector.Client\\Pages\\Shared\\Modal.razor.cs",
   "PreviewInSolutionExplorer": false
 }

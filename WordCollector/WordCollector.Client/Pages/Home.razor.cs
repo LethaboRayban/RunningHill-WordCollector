@@ -2,18 +2,18 @@
 using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using WordCollector.Client.Pages.Shared;
 using WordCollector.Shared;
 
 namespace WordCollector.Client.Pages;
 
 public partial class Home
 {
-    private List<WordEntry> words = new List<WordEntry>();
-
-    private Modal _modal = default!;
-
     [Inject] private HttpClient _http { get; set; } = default!;
+
+    private List<WordEntry> words = new List<WordEntry>();
+    private bool isModalVisible;
+    private string modalTitle = string.Empty;
+    private Dictionary<string, object>? formParameters;
     private WordType? selectedFilter = null;
 
     private readonly JsonSerializerOptions jsonOptions = new()
@@ -31,12 +31,41 @@ public partial class Home
         {
             words = await _http.GetFromJsonAsync<List<WordEntry>>(url, jsonOptions);
         }
+        catch (HttpRequestException ex)
+        {
+             //add logging 
+             //api request failer
+        }
+
         catch (Exception ex)
         {
-
-            throw;
+            //add logging
+            //other unexpected error
         }
+    }
+
+    private void OpenWordEntryModal(WordEntry? wordToEdit)
+    {
+        bool isNew = wordToEdit is null;
+        modalTitle = isNew ? "Add New Word" : "Edit Word";
+
         
+        var model = isNew
+            ? new WordEntry()
+            : new WordEntry
+            {
+                Id = wordToEdit!.Id,
+                Word = wordToEdit.Word,
+                Type = wordToEdit.Type
+            };
+
+        formParameters = new Dictionary<string, object>
+        {
+            { nameof(WordForm.WordEntry), model },
+            { nameof(WordForm.OnValidSave), EventCallback.Factory.Create<WordEntry>(this, HandlWordEntrySaved) }
+        };
+
+        isModalVisible = true;
     }
 
     private async Task FilterByType(WordType? type)
@@ -45,15 +74,25 @@ public partial class Home
         await LoadWords();
     }
 
-    private async Task HandleUserSaved(WordEntry newWord)
+    private async Task HandlWordEntrySaved(WordEntry wordEntry)
     {
-        // Persist newUser to your API or database
-        var response = await _http.PostAsJsonAsync("api/words", newWord, jsonOptions);
-        if (response.IsSuccessStatusCode)
+        if(wordEntry.Id == 0)
         {
-            newWord = new WordEntry();
-            await LoadWords();
+            // Persist newUser to your API or database
+            var response = await _http.PostAsJsonAsync("api/words", wordEntry, jsonOptions);
+
+
+            if (response.IsSuccessStatusCode)
+            {
+                //newWord = new WordEntry();
+                await LoadWords();
+            }
         }
+        else
+        {
+
+        }
+      
         await Task.CompletedTask;
     }
 

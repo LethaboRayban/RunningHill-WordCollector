@@ -7,24 +7,22 @@ using WordCollector.Shared;
 
 namespace WordCollector.Client.Pages;
 
-public partial class AddWord
+public partial class WordForm
 {
-    [CascadingParameter] private Modal? ParentModal { get; set; }
+    [Parameter] public WordEntry WordEntry { get; set; } = new();
     [Parameter] public EventCallback<WordEntry> OnValidSave { get; set; }
 
-    private WordEntry _newWord = new();
     private EditContext _editContext = default!;
 
-    private readonly JsonSerializerOptions jsonOptions = new()
-    {
-        PropertyNameCaseInsensitive = true,
-        Converters = { new JsonStringEnumConverter() }
-    };
+    //private readonly JsonSerializerOptions jsonOptions = new()
+    //{
+    //    PropertyNameCaseInsensitive = true,
+    //    Converters = { new JsonStringEnumConverter() }
+    //};
 
-    protected override void OnInitialized()
+    protected override void OnParametersSet()
     {
-        _editContext = new EditContext(_newWord);
-        ParentModal?.RegisterForm((IModalForm)this);
+        _editContext = new EditContext(WordEntry);
     }
 
     public async Task<bool> SubmitAsync()
@@ -34,7 +32,7 @@ public partial class AddWord
         {
             return false;
         }
-        await OnValidSave.InvokeAsync(_newWord);
+        await OnValidSave.InvokeAsync(WordEntry);
         return true;
     }
 }

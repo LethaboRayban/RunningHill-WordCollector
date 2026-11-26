@@ -5,9 +5,9 @@ C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollecto
 C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\WordCollector.Shared.AssemblyInfoInputs.cache
 C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\WordCollector.Shared.AssemblyInfo.cs
 C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\WordCollector.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\WordCollector.Shared.sourcelink.json
 C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\WordCollector.Shared.dll
 C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\refint\WordCollector.Shared.dll
 C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\WordCollector.Shared.pdb
 C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\ref\WordCollector.Shared.dll
 C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\WordColl.BEBDA9FF.Up2Date
-C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Shared\obj\Debug\net10.0\WordCollector.Shared.sourcelink.json
