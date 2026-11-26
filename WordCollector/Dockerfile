@@ -1,4 +1,4 @@
-FROM microsoft.com AS build
+FROM mcr.microsoft.com AS build
 WORKDIR /src
 
 #Copy solution files and restore
