@@ -13,7 +13,7 @@ WORKDIR "/src/WordCollector.Api"
 RUN dotnet publish "WordCollector.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 #Runtime image
-FROM microsoft.com AS final
+FROM mcr.microsoft.com AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
