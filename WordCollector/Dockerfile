@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com AS build
+FROM microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 #Copy solution files and restore
@@ -13,7 +13,7 @@ WORKDIR "/src/WordCollector.Api"
 RUN dotnet publish "WordCollector.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 #Runtime image
-FROM mcr.microsoft.com AS final
+FROM microsoft.com/dotnet/sdk:10.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
