@@ -30,18 +30,16 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-// Auto-create SQLite DB on startup 
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.EnsureCreated();
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    DbInitializer.Seed(dbContext);
 }
 
 
-//app.UseHttpsRedirection();
-
-//app.UseAuthorization();
-
+app.UseBlazorFrameworkFiles();
+app.UseStaticFiles();
 app.UseCors("BlazorPolicy");
 app.MapControllers();
+app.MapFallbackToFile("Home.html");
 app.Run();
