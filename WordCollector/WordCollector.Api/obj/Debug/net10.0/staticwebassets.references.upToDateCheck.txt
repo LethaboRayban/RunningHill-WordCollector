@@ -1,3 +1,0 @@
-C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Client\obj\Debug\net10.0\staticwebassets.build.json
-C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Client\obj\Debug\net10.0\staticwebassets.build.json
-C:\Users\Admin\source\repos\RunningHill-WordCollector\WordCollector\WordCollector.Client\obj\Debug\net10.0\staticwebassets.build.json
