@@ -36,10 +36,6 @@ using (var scope = app.Services.CreateScope())
     DbInitializer.Seed(dbContext);
 }
 
-
-app.UseBlazorFrameworkFiles();
-
-app.UseStaticFiles();
 app.UseCors("BlazorPolicy");
 app.MapStaticAssets();
 app.MapControllers();
