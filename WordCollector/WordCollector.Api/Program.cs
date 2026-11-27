@@ -17,7 +17,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("BlazorPolicy", policy =>
-        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+         policy.WithOrigins("https://localhost:7112")
+              .AllowAnyHeader()
+              .AllowAnyMethod());
 });
 
 var app = builder.Build();
@@ -28,18 +30,14 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-// Auto-create SQLite DB on startup 
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.EnsureCreated();
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    DbInitializer.Seed(dbContext);
 }
 
-
-//app.UseHttpsRedirection();
-
-//app.UseAuthorization();
-
 app.UseCors("BlazorPolicy");
+app.MapStaticAssets();
 app.MapControllers();
+app.MapFallbackToFile("index.html");
 app.Run();

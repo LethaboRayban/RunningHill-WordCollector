@@ -15,6 +15,66 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Components.QuickGrid/10.0.15": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly/10.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.JSInterop.WebAssembly": "10.0.15"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net10.0/_._": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/10.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "10.0.15"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets": {}
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/10.0.15": {
         "type": "package",
         "dependencies": {
@@ -508,6 +568,19 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.JSInterop.WebAssembly/10.0.15": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Microsoft.JSInterop.WebAssembly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.JSInterop.WebAssembly.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.OpenApi/2.13.0": {
         "type": "package",
         "compile": {
@@ -824,6 +897,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "WordCollector.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.QuickGrid": "10.0.15",
+          "Microsoft.AspNetCore.Components.WebAssembly": "10.0.15",
+          "WordCollector.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WordCollector.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WordCollector.Client.dll": {}
+        }
+      },
       "WordCollector.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -853,6 +941,76 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.QuickGrid/10.0.15": {
+      "sha512": "r9OnfQgRr7FM8n9LJXtTBPYWzjoSeiSqqzFlWcp/Ai25rStt4tro8cNhmaDXBMSdap2w8RJsvO4/Yzu9GobbJg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.quickgrid/10.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "buildTransitive/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.dll",
+        "lib/net10.0/Microsoft.AspNetCore.Components.QuickGrid.xml",
+        "microsoft.aspnetcore.components.quickgrid.10.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.components.quickgrid.nuspec",
+        "staticwebassets/Microsoft.AspNetCore.Components.QuickGrid.boiwgh0w5b.bundle.scp.css",
+        "staticwebassets/QuickGrid.razor.js"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly/10.0.15": {
+      "sha512": "YWFk0tbTM25BfeJ2kFuUQ9E2HB0t6GK8jWFm2oIJeTVp3CS7CXGPU/TEpwLvtvK/uQGSX7eL4lpoRQGXgyWJZA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.webassembly/10.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net10.0/Microsoft.AspNetCore.Components.WebAssembly.props",
+        "build/net10.0/blazor.webassembly.js",
+        "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.dll",
+        "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.xml",
+        "microsoft.aspnetcore.components.webassembly.10.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/10.0.15": {
+      "sha512": "0fLVpTv9PMxOihGgSCxwTFQ8MOk0He2lqD5Hh97WKhXyZPiOj3N7c3SEBNYwUlk7J4Bv6Qe49G58SldIoJq1EA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.webassembly.server/10.0.15",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets",
+        "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
+        "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
+        "microsoft.aspnetcore.components.webassembly.server.10.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.server.nuspec",
+        "tools/BlazorDebugProxy/BrowserDebugHost.dll",
+        "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
+        "tools/BlazorDebugProxy/BrowserDebugProxy.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.Scripting.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.dll",
+        "tools/BlazorDebugProxy/Microsoft.FileFormats.dll",
+        "tools/BlazorDebugProxy/Microsoft.NET.WebAssembly.Webcil.dll",
+        "tools/BlazorDebugProxy/Microsoft.SymbolStore.dll",
+        "tools/BlazorDebugProxy/Newtonsoft.Json.dll"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/10.0.15": {
@@ -2105,6 +2263,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.JSInterop.WebAssembly/10.0.15": {
+      "sha512": "/UTg2l5MAipHsPlCXBTfTCCLHUsyVeQM+z+QSStjfbP2b4RCrxl9NoKVZ7Ls9heBUT1/4yRjhMbqojl59A/xew==",
+      "type": "package",
+      "path": "microsoft.jsinterop.webassembly/10.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net10.0/Microsoft.JSInterop.WebAssembly.dll",
+        "lib/net10.0/Microsoft.JSInterop.WebAssembly.xml",
+        "microsoft.jsinterop.webassembly.10.0.15.nupkg.sha512",
+        "microsoft.jsinterop.webassembly.nuspec"
+      ]
+    },
     "Microsoft.OpenApi/2.13.0": {
       "sha512": "wavlgBYnn7uU/ZGhFHNl0UlDOlwz+6KRduKkqdCCbfxxANaQ1rmBpETVGdwXanAM6twQOxsvI3CBEGF4OScbeQ==",
       "type": "package",
@@ -2461,6 +2634,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "WordCollector.Client/1.0.0": {
+      "type": "project",
+      "path": "../WordCollector.Client/WordCollector.Client.csproj",
+      "msbuildProject": "../WordCollector.Client/WordCollector.Client.csproj"
+    },
     "WordCollector.Shared/1.0.0": {
       "type": "project",
       "path": "../WordCollector.Shared/WordCollector.Shared.csproj",
@@ -2469,10 +2647,12 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 10.0.15",
       "Microsoft.AspNetCore.OpenApi >= 10.0.15",
       "Microsoft.EntityFrameworkCore >= 10.0.15",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.15",
       "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.15",
+      "WordCollector.Client >= 1.0.0",
       "WordCollector.Shared >= 1.0.0"
     ]
   },
@@ -2509,6 +2689,9 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
+            "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Client\\WordCollector.Client.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Client\\WordCollector.Client.csproj"
+            },
             "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Shared\\WordCollector.Shared.csproj": {
               "projectPath": "C:\\Users\\Admin\\source\\repos\\RunningHill-WordCollector\\WordCollector\\WordCollector.Shared\\WordCollector.Shared.csproj"
             }
@@ -2532,6 +2715,10 @@
         "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+            "target": "Package",
+            "version": "[10.0.15, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[10.0.15, )"
