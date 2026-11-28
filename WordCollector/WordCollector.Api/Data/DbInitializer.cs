@@ -8,21 +8,20 @@ public static class DbInitializer
     public static void Seed(AppDbContext context)
     {
 
-        context.Database.EnsureCreated();
+        context.Database.Migrate();
 
         if (context.Words.Any())
         {
             return;
         }
 
-        // 3. Add your demo records
-        var demoWords = new WordEntry[]
+        var words = new WordEntry[]
         {
-                new WordEntry { Id = 1, Word = "evaluates", Type = WordType.Noun},
-                new WordEntry { Id = 2, Word = "play", Type = WordType.Verb}
+                new WordEntry { Word = "evaluates", Type = WordType.Noun},
+                new WordEntry { Word = "play", Type = WordType.Verb}
         };
 
-        context.Words.AddRange(demoWords);
+        context.Words.AddRange(words);
         context.SaveChanges();
     }
 }

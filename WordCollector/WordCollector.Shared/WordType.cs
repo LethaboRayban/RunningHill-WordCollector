@@ -12,4 +12,10 @@
         Conjunction,
         Determiner
     }
+
+    public class WordTypeEntry
+    {
+        public WordType Id { get; set; }
+        public string Name { get; set; } = string.Empty; 
+    }
 }
