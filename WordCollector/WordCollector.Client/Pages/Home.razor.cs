@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.QuickGrid;
 using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -14,7 +15,16 @@ public partial class Home
     private bool isModalVisible;
     private string modalTitle = string.Empty;
     private Dictionary<string, object>? formParameters;
-    private WordType? selectedFilter = null;
+    private string SearchTerm { get; set; } = string.Empty;
+    private PaginationState pagination = new() { ItemsPerPage = 10 };
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    //filtering
+    private IQueryable<WordEntry> FilteredWords => words
+       .Where(e => string.IsNullOrWhiteSpace(SearchTerm) ||
+                   e.Word.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase))
+       .AsQueryable();
 
     private readonly JsonSerializerOptions jsonOptions = new()
     {
@@ -26,22 +36,31 @@ public partial class Home
 
     private async Task LoadWords()
     {
-        var url = selectedFilter.HasValue ? $"api/words?type={selectedFilter}" : "api/words";
+        //var url = selectedFilter.HasValue ? $"api/words?type={selectedFilter}" : "api/words";
         try
         {
-            words = await _http.GetFromJsonAsync<List<WordEntry>>(url, jsonOptions);
+            isLoading = true;
+            words = await _http.GetFromJsonAsync<List<WordEntry>>("api/words", jsonOptions);
         }
         catch (HttpRequestException ex)
         {
-             //add logging 
-             //api request failer
+            //add logging 
+            errorMessage = $"Error fetching data: {ex.Message}";
         }
 
         catch (Exception ex)
         {
             //add logging
-            //other unexpected error
+            errorMessage = $"Something went wrong: {ex.Message}";
         }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+    private void ClearSearch()
+    {
+        SearchTerm = string.Empty;
     }
 
     private void OpenWordEntryModal(WordEntry? wordToEdit)
@@ -68,11 +87,11 @@ public partial class Home
         isModalVisible = true;
     }
 
-    private async Task FilterByType(WordType? type)
-    {
-        selectedFilter = type;
-        await LoadWords();
-    }
+    //private async Task FilterByType(WordType? type)
+    //{
+    //    selectedFilter = type;
+    //    await LoadWords();
+    //}
 
     private async Task HandlWordEntrySaved(WordEntry wordEntry)
     {

@@ -2,7 +2,9 @@
 @using Microsoft.AspNetCore.Components.QuickGrid
 @using WordCollector.Client.Pages.Shared
 
-<button class="btn btn-primary" @onclick="() => OpenWordEntryModal(null)">Add Word</button>
+<div>
+    <button class="btn btn-primary" @onclick="() => OpenWordEntryModal(null)">Add Word</button>
+</div>
 
 <Modal IsVisible="isModalVisible"
        Title="@modalTitle"
@@ -10,22 +12,77 @@
        FormParameters="formParameters"
        OnClose="() => isModalVisible = false" />
 
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-white py-3">
+            <div class="row align-items-center g-2">
+                <div class="col-md-6">
+                    <h5 class="mb-0 fw-semibold">Words</h5>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text"
+                               class="form-control border-start-0 ps-0"
+                               placeholder="Search word"
+                               @bind="SearchTerm"
+                               @bind:event="oninput" />
 
-@if (!words.Any())
-{
-    <p>Loading...</p>
-}
-else
-{
-    <div class="table-responsive shadow-sm rounded border">
-        <QuickGrid Items="@words.AsQueryable()" Class="table table-hover table-striped align-middle mb-0">
-            <TemplateColumn Title="Actions">
-                <button @onclick="() => OpenWordEntryModal(context)">Edit</button>
-            </TemplateColumn>
-            <PropertyColumn Property="@(x => x.Id)" Sortable="true" />
-            <PropertyColumn Property="@(x => x.Word)" Sortable="true" />
-            <PropertyColumn Property="@(x => x.Type)" Sortable="true" />
-        </QuickGrid>
+                        @if (!string.IsNullOrWhiteSpace(SearchTerm))
+                        {
+                            <button class="btn btn-outline-secondary"
+                                    type="button"
+                                    @onclick="ClearSearch"
+                                    title="Clear search">
+                                ✕
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-0">
+            @if (isLoading)
+            {
+                <div class="d-flex justify-content-center align-items-center py-5">
+                    <div class="spinner-border text-primary me-2" role="status"></div>
+                    <span class="text-muted">Loading...</span>
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <QuickGrid Items="@FilteredWords"
+                               Pagination="@pagination"
+                               Class="table table-hover table-striped align-middle mb-0">
+                        <TemplateColumn Title="Actions">
+                            <button @onclick="() => OpenWordEntryModal(context)">Edit</button>
+                        </TemplateColumn>
+                        <PropertyColumn Property="@(x => x.Id)" Sortable="true" />
+                        <PropertyColumn Property="@(x => x.Word)" Sortable="true" />
+                        <PropertyColumn Property="@(x => x.Type)" Sortable="true" />
+                    </QuickGrid>
+                </div
+                <div class="mb-0">
+                    <Paginator State="@pagination" />
+                </div>
+            }
+        </div>
+@* 
+        <!-- Card Footer with Result Count & Pagination -->
+        @if (!isLoading && string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="card-footer bg-white d-flex flex-wrap justify-content-between align-items-center py-2">
+                <small class="text-muted">
+                    Showing <strong>@FilteredEmployees.Count()</strong> of <strong>@allEmployees.Count</strong> records
+                </small>
+                <div class="mb-0">
+                    <Paginator State="@pagination" />
+                </div>
+            </div>
+        } *@
     </div>
-}
-
+</div>
