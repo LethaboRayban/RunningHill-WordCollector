@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace WordCollector.Shared
 {
@@ -15,6 +12,8 @@ namespace WordCollector.Shared
 
         [Required]
         public WordType Type { get; set; }
+
+        public WordTypeEntry? WordTypeEntry { get; set; }
 
     }
 }
