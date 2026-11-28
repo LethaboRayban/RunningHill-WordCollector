@@ -1,4 +1,11 @@
-﻿################################################################################
+﻿/.vs
+/WordCollector/.vs
+/WordCollector/WordCollector.Api/bin
+/WordCollector/WordCollector.Api/obj
+/WordCollector/WordCollector.Client/bin
+/WordCollector/WordCollector.Client/obj
+/WordCollector/WordCollector.Shared/obj
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 

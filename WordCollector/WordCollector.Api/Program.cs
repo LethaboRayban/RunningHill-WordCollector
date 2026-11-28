@@ -10,14 +10,14 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=words.db"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 // Allow Blazor Client origin
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("BlazorPolicy", policy =>
-         policy.WithOrigins("https://localhost:7112")
+         policy.WithOrigins("http://localhost:5201","https://localhost:7112")
               .AllowAnyHeader()
               .AllowAnyMethod());
 });
@@ -30,18 +30,15 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-// Auto-create SQLite DB on startup 
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.EnsureCreated();
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    DbInitializer.Seed(dbContext);
 }
 
-
-//app.UseHttpsRedirection();
-
-//app.UseAuthorization();
-
 app.UseCors("BlazorPolicy");
+app.MapStaticAssets();
+//app.UseHttpLogging();
 app.MapControllers();
+app.MapFallbackToFile("index.html");
 app.Run();
